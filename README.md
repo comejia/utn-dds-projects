@@ -20,3 +20,6 @@ La segunda parte consiste en: **persistencia, presentacion y arquitectura**
 * Introducción a UX
 * Componentes arquitecurales
 * Microservicios
+* Deployment
+
+Todos estos temas se integraron en el TP anual [Mi impacto ambiental](https://github.com/comejia/utn-dds-mi-impacto-ambiental)
