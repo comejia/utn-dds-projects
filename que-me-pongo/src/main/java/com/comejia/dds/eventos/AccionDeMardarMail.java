@@ -1,11 +1,12 @@
 package com.comejia.dds.eventos;
 
 import com.comejia.dds.clima.AlertaMeteorologica;
+import com.comejia.dds.eventos.adapters.Correo;
 import com.comejia.dds.negocio.Usuario;
 
 import java.util.List;
 
-public class AccionDeMardarMail implements AccionConfirgurable {
+public class AccionDeMardarMail implements AccionConfigurable {
 
   private Correo correo;
 

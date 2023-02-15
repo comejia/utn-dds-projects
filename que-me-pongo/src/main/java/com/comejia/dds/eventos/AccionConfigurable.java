@@ -5,6 +5,6 @@ import com.comejia.dds.negocio.Usuario;
 
 import java.util.List;
 
-public interface AccionConfirgurable {
+public interface AccionConfigurable {
   void anteNuevasAlertasMeteorologicas(Usuario usuario, List<AlertaMeteorologica> alertas);
 }

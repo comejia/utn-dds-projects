@@ -7,7 +7,6 @@ import java.util.Map;
 public class ServicioMetereologicoAccuWeather implements ServicioMetereologico {
 
   private final AccuWeatherAPI apiClima;
-  private List<AlertaMeteorologica> alertas;
 
   public ServicioMetereologicoAccuWeather(AccuWeatherAPI apiClima) {
     this.apiClima = apiClima;

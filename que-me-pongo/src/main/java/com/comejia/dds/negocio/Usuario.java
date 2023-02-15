@@ -3,7 +3,7 @@ package com.comejia.dds.negocio;
 import com.comejia.dds.atuendos.Guardarropas;
 import com.comejia.dds.atuendos.Sugerencia;
 import com.comejia.dds.clima.AlertaMeteorologica;
-import com.comejia.dds.eventos.AccionConfirgurable;
+import com.comejia.dds.eventos.AccionConfigurable;
 import com.comejia.dds.prenda.Prenda;
 
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ public class Usuario {
 
   private final List<Guardarropas> guardarropas;
   private Sugerencia sugerenciaDiaria;
-  List<AccionConfirgurable> accionConfirgurables = new ArrayList<>();
+  List<AccionConfigurable> accionConfigurables = new ArrayList<>();
 
   public Usuario(List<Guardarropas> guardarropas) {
     this.guardarropas = guardarropas;
@@ -41,20 +41,20 @@ public class Usuario {
     return new Sugerencia();
   }
 
-  public void agregarAccion(AccionConfirgurable accion) {
-    this.accionConfirgurables.add(accion);
-  }
-
-  public void removerAccion(AccionConfirgurable accion) {
-    this.accionConfirgurables.remove(accion);
-  }
-
   public void calcularSugerenciaDiaria() {
-    this.sugerenciaDiaria = calcularSugerencia();
+        this.sugerenciaDiaria = calcularSugerencia();
+    }
+
+  public void agregarAccion(AccionConfigurable accion) {
+    this.accionConfigurables.add(accion);
+  }
+
+  public void removerAccion(AccionConfigurable accion) {
+    this.accionConfigurables.remove(accion);
   }
 
   public void realizarAccionSobreAlertas(List<AlertaMeteorologica> alertas) {
-    this.accionConfirgurables.forEach(accion -> accion.anteNuevasAlertasMeteorologicas(this, alertas));
+    this.accionConfigurables.forEach(accion -> accion.anteNuevasAlertasMeteorologicas(this, alertas));
   }
 
 }
