@@ -5,11 +5,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>ar.edu.utn.frba.dds</groupId>
-  <artifactId>ejercicio</artifactId>
+  <groupId>com.comejia.dds</groupId>
+  <artifactId>macowins</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>ejercicio</name>
+  <name>macowins</name>
   <url>https://github.com/dds-utn</url>
 
   <properties>
