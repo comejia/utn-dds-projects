@@ -40,7 +40,7 @@ Requerimientos [Quinta Iteración](/src/main/resources/que_me_pongo_quinta_itera
 * Como usuarie de QuéMePongo, necesito ver todas las propuestas de modificación (agregar o quitar prendas) del guardarropas y poder aceptarlas o rechazarlas.
 * Como usuarie de QuéMePongo, quiero poder deshacer las propuestas de modificación que haya aceptado.
 
-Requerimientos [Quinta Iteración](/src/main/resources/que_me_pongo_sexta_iteracion.pdf):
+Requerimientos [Sexta Iteración](/src/main/resources/que_me_pongo_sexta_iteracion.pdf):
 * Como usuarie de QueMePongo quiero tener una sugerencia diaria de qué ponerme y que todas las mañanas, diariamente, esta sea actualizada
 * Como empleade de QueMePongo quiero poder disparar el cálculo de sugerencias diarias para todos los usuarios para poder ejecutar esta acción a principio de cada día.
 * Como usuarie de QueMePongo, quiero poder conocer cuáles son las últimas alertas meteorológicas publicadas en el sistema para estar informado (pudiendo verlas, por ejemplo, al entrar en quemepongo.com )1
