@@ -7,7 +7,7 @@ Requerimientos del ejercicio [Macowins](/src/main/resources/Ejercicio_Macowins.p
 
 A continuacion se presenta una solucion utilizando el diagrama de clases
 
-![Diagrama de clases](/src/main/resources/uml_macowins.png)
+![Diagrama de clases](src/main/resources/uml_macowins.png)
 
 
 **Nota: La implementación del código es en base a este [diagrama](https://drive.google.com/file/d/11vgwTdXXujSuDQTDULVLtHEiRFuzPoik/view)**
