@@ -10,4 +10,19 @@ public class ClausulaVencimiento implements Clausula {
     public String texto() {
         return "Vence el " + this.fechaVencimiento;
     }
+
+    @Override
+    public Cliente getClient() {
+        return null;
+    }
+
+    @Override
+    public TipoGrano getTipoGrano() {
+        return null;
+    }
+
+    @Override
+    public int precio() {
+        return 0;
+    }
 }

@@ -26,12 +26,16 @@ public class Pelicula implements Contenido {
         return this.estaVista;
     }
 
-    public Pelicula continuarViendo() {
+    /*public Pelicula continuarViendo() {
         return this;
-    }
+    }*/
 
     public void meGusta() {
         this.likes++;
+    }
+
+    public int getEdadRecomendada() {
+        return this.edadRecomendad;
     }
 
     @Override
@@ -47,5 +51,14 @@ public class Pelicula implements Contenido {
     @Override
     public boolean aptoTodoPublico() {
         return this.edadRecomendad  < 18;
+    }
+
+    @Override
+    public String genero() {
+        return this.genero;
+    }
+
+    public void reproducir() {
+
     }
 }

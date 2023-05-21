@@ -7,7 +7,7 @@ public enum Resolucion {
 
     private int resolucion;
 
-    public Resolucion(int resolucion) {
+    Resolucion(int resolucion) {
         this.resolucion = resolucion;
     }
 

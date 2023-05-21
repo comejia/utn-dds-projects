@@ -5,14 +5,13 @@ import java.util.stream.Collectors;
 
 public class Grupo {
     private int tamIdeal;
-    private boolean grupoAbierto;
+    private boolean grupoAbierto = true;
     private List<Alumno> alumnos;
     private Correo correo;
     private SCM scm;
     private List<Cambio> cambiosPendientes;
 
     public Grupo(int tamIdeal) {
-
         this.tamIdeal = tamIdeal;
     }
 
@@ -22,6 +21,11 @@ public class Grupo {
         } else {
             posponerInscripcion(alumno);
         }
+    }
+
+    public void agregarAlumno(Alumno alumno) {
+        this.alumnos.add(alumno);
+        notificarAlta(alumno);
     }
 
     public void notificarAlta(Alumno alumno) {
@@ -38,11 +42,6 @@ public class Grupo {
         this.cambiosPendientes.add(new AltaAlumno(alumno));
     }
 
-    public void agregarAlumno(Alumno alumno) {
-        this.alumnos.add(alumno);
-        notificarAlta(alumno);
-    }
-
     public void darBaja(Alumno alumno) {
         if (grupoAbierto) {
             eliminarAlumno(alumno);
@@ -51,17 +50,17 @@ public class Grupo {
         }
     }
 
+    public void eliminarAlumno(Alumno alumno) {
+        this.alumnos.remove(alumno);
+        notificarBaja(alumno);
+    }
+
     public void notificarBaja(Alumno alumno) {
         this.correo.enviar(getMailsAlumnos(), "Baja de alumno", "Se dio de baja: " + alumno.getNombre());
     }
 
     public void posponerBaja(Alumno alumno) {
         this.cambiosPendientes.add(new BajaAlumno(alumno));
-    }
-
-    public void eliminarAlumno(Alumno alumno) {
-        this.alumnos.remove(alumno);
-        notificarBaja(alumno);
     }
 
     public void cerrar() {

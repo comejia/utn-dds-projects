@@ -1,6 +1,11 @@
 package com.comejia.parcial;
 
 public class ClausulaPrecio implements Clausula {
+
+    public ClausulaPrecio(int deuda, String grano, int precioXTonelada, int toneladaAEntregar) {
+        
+    }
+
     @Override
     public String texto() {
         return "";
@@ -14,5 +19,10 @@ public class ClausulaPrecio implements Clausula {
     @Override
     public TipoGrano getTipoGrano() {
         return null;
+    }
+
+    @Override
+    public int precio() {
+        return 0;
     }
 }
